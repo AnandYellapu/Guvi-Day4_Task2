@@ -19,11 +19,8 @@ request.onload=function() {
     var data=JSON.parse(this.response)
     console.log(data)
     console.log(data[0].flag)
-    console.log(data[0].flag.common)
     console.log(data[0].flags.png)
-    console.log(data[0].flags.png.common)
     console.log(data[0].flags.svg)
-    console.log(data[0].flags.svg.common)
     
 
     // for loop
@@ -31,7 +28,7 @@ request.onload=function() {
     for(i=0;i<data.length;i++){
       console.log(data[i].flag)
       console.log(data[i].flags.png)
-      console.log(data[0].flags.svg)
+      console.log(data[i].flags.svg)
     }
 }
 
